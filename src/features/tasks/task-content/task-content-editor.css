@@ -1,0 +1,129 @@
+/* Style de base de l'éditeur */
+.reactjs-tiptap-editor .ProseMirror {
+  font-size: 1rem;
+  min-height: 100px;
+  padding: 1rem;
+  background-color: #000; /* Fond sombre */
+  color: #ddd; /* Texte */
+  border: none;
+  outline: none;
+}
+
+.reactjs-tiptap-editor .richtext-outline {
+  outline: solid 0.5px #444;
+}
+
+/* Style au focus */
+.reactjs-tiptap-editor .ProseMirror:focus {
+  outline: solid 1px #999;
+  /* border-color: #999; */
+}
+
+/* Style personnalisé des checkboxes */
+.reactjs-tiptap-editor
+  .ProseMirror
+  ul[data-type="taskList"]
+  input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #666;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* Style checkbox */
+/* Alignement des éléments de la liste */
+.reactjs-tiptap-editor .ProseMirror ul[data-type="taskList"] li {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.reactjs-tiptap-editor
+  .ProseMirror
+  ul[data-type="taskList"]
+  li[data-checked="true"] {
+  text-decoration: none; /* Supprime le texte barré */
+  color: #777; /* Change la couleur du texte quand coché */
+}
+
+/* Optionnel: Style de la checkbox elle-même */
+.reactjs-tiptap-editor
+  .ProseMirror
+  ul[data-type="taskList"]
+  li
+  input[type="checkbox"] {
+  cursor: pointer;
+  margin: 0 0.5rem 0 0;
+  position: relative;
+  top: 3px;
+}
+
+/* Ajouter une coche blanche */
+.reactjs-tiptap-editor
+  .ProseMirror
+  ul[data-type="taskList"]
+  input[type="checkbox"]:checked::before {
+  content: "✓";
+  position: absolute;
+  color: #ddd;
+  font-size: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Style quand la checkbox est cochée */
+.reactjs-tiptap-editor
+  .ProseMirror
+  ul[data-type="taskList"]
+  input[type="checkbox"]:checked {
+  background-color: #ff4a4a; /* Couleur de fond quand coché */
+  border-color: #ff4a4a;
+}
+
+/* Ajustement du texte */
+.reactjs-tiptap-editor .ProseMirror ul[data-type="taskList"] li p {
+  margin: 0;
+  /* line-height: 1.5; */
+}
+
+/* Style Code */
+.reactjs-tiptap-editor .ProseMirror code {
+  background-color: #2e2e2e;
+  color: #ddd;
+  font-size: 0.9rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+}
+
+/* Style blockquote */
+.reactjs-tiptap-editor .ProseMirror blockquote {
+  border-left: 2px solid #666;
+  padding: 0 0 0 0.5rem;
+  margin-left: 0;
+  color: #777;
+}
+
+/* Style Column */
+.reactjs-tiptap-editor .ProseMirror .column {
+  border-style: dashed;
+  border-radius: 5px;
+}
+
+/* Style Table */
+.reactjs-tiptap-editor .ProseMirror table {
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+
+.disable-context-menu {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}

@@ -1,0 +1,19 @@
+model Task {
+  id           String    @id @default(uuid())
+  idx          Int       @unique @default(autoincrement())
+  identifier   String    @unique
+  title        String
+  content      String?
+  label        String
+  status       String
+  priority     String
+  aiPriority   Int
+  userPriority Int
+  token        String
+  active       Boolean   @default(false)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  dueOfDate    DateTime?
+  userId       String
+  user         User      @relation(fields: [userId], references: [id])
+}
