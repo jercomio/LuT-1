@@ -1,9 +1,14 @@
-Welcome to [NOW.TS](https://nowts.app) directory.
+## LUNAR TASKS MANAGER & MONITORING
 
-## Setup the project
+Made with the SaaS boilerplate [NOW.TS](https://nowts.app).
 
-Please follow the [NOW.TS Course](https://codeline.app/courses/clqn8pmte0001lr54itcjzl59/lessons/clqn8pz990003112iia11p7uo) to setup the project.
+## Bêta Version
 
-## Contributions
+LuT-1 (Lunar Tasks Manager & Monitoring) : Under development...
 
-Feel free to create a pull request with any changes you think valuable.
+## Stack
+
+LuT-1 is a fullstack application, using the following technologies:
+- Backend : Next.js, Prisma, PostgreSQL, TypeScript ;
+- Frontend : React, Next.js, TypeScript, Tailwind CSS ;
+- UI/UX : TailwindCSS, Radix/ShadcnUI.
